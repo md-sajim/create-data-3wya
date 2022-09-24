@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import FakeDataObject from './Create-fake-data-object/FakeDataObject';
+import JsonDataGanarator from './Create-fake-data-object/FakeDataJsonDataGanator/JsonDataGanarator';
+import LodeData from './JsonData/LodeDataJson/LodeData';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LodeData></LodeData>
+     <JsonDataGanarator></JsonDataGanarator>
+     <FakeDataObject></FakeDataObject>
     </div>
   );
 }
