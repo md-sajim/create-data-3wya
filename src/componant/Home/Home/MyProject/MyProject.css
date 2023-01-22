@@ -1,0 +1,63 @@
+.body1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #16384c; */
+    background: linear-gradient();
+}
+.container1{
+    position:relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.container1 .card1{
+    position: relative;
+    width: 350px;
+    height: 215px;
+    /* background: rgba(212, 167, 84, 0.027); */
+    /* margin: 30px 5px; */
+    /* padding: 20px 20px; */
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 0.5px 20px rgba(226, 185, 51, 0.1); */
+    transition: 0.6s ease-in-out;
+}
+.container1 .card1:hover{
+    height: 315px;
+}
+.container1 .card1 .imgBx1{
+    position: relative;
+    width: 360px;
+    height: 200px;
+    top: -60px;
+    /* left: 4px; */
+    z-index: 1;
+    /* box-shadow: 0.5px 20px rgba(0, 0, 0, 0.2); */
+}
+.container1 .card1 .imgBx1 embed{
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+}
+.container1 .card1 .content1{
+    position: relative;
+    width: 360px;
+    left:150px;
+    margin: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.container1 .card1:hover .content1{
+    visibility: visible;
+    opacity: 1;
+    margin-top:-50px;
+    transition-delay: 0.5s;
+}

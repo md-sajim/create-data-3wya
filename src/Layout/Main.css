@@ -1,0 +1,146 @@
+.body_1{
+    margin: 0 auto  ;
+}
+.babul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom:-120px;
+}
+.babul .carcal{
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  position: relative;
+  animation: babul 28s linear infinite;
+}
+.babul .carcal:nth-child(1){
+  animation-delay: 2s;
+  width: 45px;
+  height: 45px;
+}
+.babul .carcal:nth-child(2){
+  animation-delay: 6s;
+  width: 110px;
+  height: 110px;
+  border: 0;
+}
+.babul .carcal:nth-child(3){
+  animation-delay: 3s;
+  width: 55px;
+  height: 55px;
+}
+.babul .carcal:nth-child(4){
+  animation-delay: 12s;
+  width: 100px;
+  height: 100px;
+  border: 0;
+}
+.babul .carcal:nth-child(5){
+  animation-delay: 2s;
+  width: 60px;
+  height: 60px;
+}
+.babul .carcal:nth-child(6){
+  animation-delay: 15s;
+  width: 110px;
+  height: 110px;
+  border: 0;
+}
+.babul .carcal:nth-child(7){
+  animation-delay: 21s;
+  width: 80px;
+  height: 80px;
+  border: 0;
+}
+.babul .carcal:nth-child(8){
+  animation-delay: 10s;
+  width: 100px;
+  height: 100px;
+  border: 0;
+}
+.babul .carcal:nth-child(9){
+  animation-delay: 27s;
+  width: 70px;
+  height: 70px;
+}
+.babul .carcal:nth-child(10){
+  animation-delay: 24s;
+  width: 65px;
+  height: 65px;
+  border: 0;
+}
+.babul .carcal:nth-child(11){
+  animation-delay: 8s;
+  width: 95px;
+  height: 95px;
+}
+.babul .carcal:nth-child(12){
+  animation-delay: 6s;
+  width: 75px;
+  height: 75px;
+  border: 0;
+}
+.babul .carcal:nth-child(13){
+  animation-delay: 5s;
+  width: 75px;
+  height: 75px;
+}
+
+.babul .dot{
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+@keyframes babul{
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-280vh);
+    opacity: 0;
+  }
+}
+@media (min-width: 640px) {
+    .body_1 {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .body_1 {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .body_1 {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .body_1 {
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .body_1 {
+      max-width: 1536px;
+    }
+  }

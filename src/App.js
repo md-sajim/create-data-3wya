@@ -1,16 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import FakeDataObject from './Create-fake-data-object/FakeDataObject';
-import JsonDataGanarator from './Create-fake-data-object/FakeDataJsonDataGanator/JsonDataGanarator';
-import LodeData from './JsonData/LodeDataJson/LodeData';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./componant/Home/Home/Home";
+import Blog from "./componant/Pages/Blog/Blog";
+import Main from "./Layout/Main";
 
 function App() {
+  const route = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main></Main>,
+      children: [
+        {
+          path: "/",
+          element:<Home></Home>
+        },
+        {
+          path:"/blog",
+          element:<Blog></Blog>
+        }
+      ]
+    }
+  ])
   return (
-    <div className="App">
-      <LodeData></LodeData>
-     <JsonDataGanarator></JsonDataGanarator>
-     <FakeDataObject></FakeDataObject>
-    </div>
+    <RouterProvider router={route}>
+      
+    </RouterProvider>
   );
 }
 
