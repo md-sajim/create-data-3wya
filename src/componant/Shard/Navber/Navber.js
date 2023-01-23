@@ -9,19 +9,28 @@ const Navber = () => {
                 <a className="btn btn-ghost normal-case text-2xl" style={{ fontFamily: "initial", color: "#d57d1f" }}>MD ABU TALEB</a>
             </div>
             <div className='hidden lg:block mr-20'>
-                <Link className='resume' to='/'>
+                <Link 
+                data-aos="flip-left"
+                data-aos-duration="2000"
+                className='resume' to='/'>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     HOME</Link>
-                <Link className='resume mx-1' to='/'>
+                <Link 
+                data-aos="flip-left"
+                data-aos-duration="2000"
+                className='resume mx-1' to='/'>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     ABOUT</Link>
-                <Link className='resume' to='/blog'>
+                <Link 
+                data-aos="flip-left"
+                data-aos-duration="2000"
+                className='resume' to='/blog'>
                     <span></span>
                     <span></span>
                     <span></span>

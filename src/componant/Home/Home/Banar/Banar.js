@@ -14,9 +14,9 @@ const Banar = () => {
         autoplay: true,
         animationData: animationData,
         rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
+            preserveAspectRatio: "xMidYMid slice"
         }
-      };
+    };
     return (
         <WaterWave
             // imageUrl={image}
@@ -32,21 +32,31 @@ const Banar = () => {
                     <section className=" text-gray-100">
                         <div className="container flex flex-col justify-center  mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-around">
                             <div className="flex flex-col justify-center  p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                                <h1 className="text-5xl font-bold leading-none sm:text-6xl">Ac mattis
+                                <h1 
+                                 data-aos="fade-up"
+                                 data-aos-duration="2000"
+                                 className="text-5xl font-bold leading-none sm:text-6xl">Ac mattis
                                     <span className="text-purple-400"> senectus</span>erat pharetra
                                 </h1>
-                                <p className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
+                                <p 
+                                 data-aos="fade-up"
+                                 data-aos-duration="2000"
+                                 className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
                                     <br className="hidden md:inline lg:hidden" />turpis pulvinar, est scelerisque ligula sem
                                 </p>
                                 <div className="flex flex-col space-y-4  mb-3 items-center justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                                    <a className='resume' href={resume}>
+                                    <a data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000" className='resume' href={resume}>
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         RESUME
                                     </a>
-                                    <a className='resume' target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/developer-md-abu-taleb/">
+                                    <a data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000" className='resume' target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/developer-md-abu-taleb/">
                                         <span></span>
                                         <span></span>
                                         <span></span>
@@ -55,14 +65,18 @@ const Banar = () => {
                                     </a>
                                 </div>
                                 <div className="flex flex-col space-y-4 mb-3 items-center justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                                    <a className='resume' target='_blank' rel='noreferrer' href="https://github.com/md-sajim/">
+                                    <a data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000" className='resume' target='_blank' rel='noreferrer' href="https://github.com/md-sajim/">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         GITHUB
                                     </a>
-                                    <a className='resume' target='_blank' rel='noreferrer' href="https://www.facebook.com/sajim.mazy/">
+                                    <a data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000" className='resume' target='_blank' rel='noreferrer' href="https://www.facebook.com/sajim.mazy/">
                                         <span></span>
                                         <span></span>
                                         <span></span>
@@ -71,12 +85,12 @@ const Banar = () => {
                                     </a>
                                 </div>
                             </div>
-                        
+
                             <div className="lg:flex items-center hidden justify-center   lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                                 <Lottie
                                     options={defaultOptions}
                                     height={500}
-                                    width={400}
+                                    width={600}
                                     loop={true}
 
                                 />

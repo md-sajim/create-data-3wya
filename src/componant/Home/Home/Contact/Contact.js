@@ -1,8 +1,18 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
+import Lottie from 'react-lottie';
+import animationData from './xv2TTeMajs.json'
 
 const Contact = () => {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -20,6 +30,13 @@ const Contact = () => {
         <div className='mt-20'>
             <div className="hero-content ml-auto">
                 <div className="card  w-full max-w-lg lg:ml-[300px]" style={{ backgroundColor: "#ffcb69" }}>
+                <Lottie
+                    options={defaultOptions}
+                    height={100}
+                    width={100}
+                    loop={true}
+
+                />
                     <div className="card-body">
                         <h3 className='text-lg font-bold spacal_tital'>Contact me</h3>
                         <form ref={form} onSubmit={sendEmail}>
